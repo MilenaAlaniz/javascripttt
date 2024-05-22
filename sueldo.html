@@ -1,0 +1,32 @@
+<html>
+<head>
+
+</head>
+<body>
+
+<script>
+
+let sueldo,antiguedad,total;
+let aumento=0;
+ 
+sueldo=parseInt(prompt('ingrese sueldo',' '));
+antiguedad=parseInt(prompt('ingrese antiguedad',' '));
+
+if(sueldo<500 && antiguedad>=10)
+{
+aumento=sueldo*0.2;}
+
+if(sueldo<500 && antiguedad<10)
+{
+aumento=sueldo*0.1;}
+
+total=sueldo+aumento;
+ 
+document.write("el empleado cobrara" +total+'<br>');
+
+document.write("sueldo   "+ sueldo+ "antiguedad   " + antiguedad);
+
+</script>
+ 
+</body>
+</html>
